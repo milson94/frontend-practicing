@@ -1,0 +1,395 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+:root {
+    --green:  #01B289; 
+}
+
+.amerigo {
+    font-family: 'Amerigo-bt roman opt',sans-serif;
+}
+
+header{
+    background: rgb(241, 241, 241);
+    padding: .8rem; 
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+header .navbar{
+    max-width: 1400px;
+}
+
+header .navbar img{
+    cursor: pointer;
+}
+
+header .navbar img{
+    width: 9rem;
+}
+header .navbar .nav a{
+    margin: 0 .9rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color:rgb(85, 85, 85); 
+}
+
+header .buttons h4{
+    margin: 0 .8rem; padding: 0;
+    text-transform: uppercase;
+    color: var(--green); 
+    padding: .5rem 1rem;
+    font-weight: 600;
+    font-size: .78rem;
+    letter-spacing: .1rem; 
+    
+}
+
+header .buttons h4:nth-of-type(1){
+    border-radius: .3rem; 
+    border: .124rem solid rgb(31, 189, 123); 
+}
+
+header .buttons h4:nth-of-type(1):hover{
+    background: var(--green);
+    color : #fff; 
+}
+
+header .buttons h4:nth-of-type(2){
+    color: #fff; 
+    background: var(--green);
+}
+
+header .buttons h4:nth-of-type(2):hover{
+    background: #0c8766;
+}
+
+
+
+header .icon i{
+    font-size: 2rem;
+    color: var(--green); 
+    display: none;
+    margin: .7rem 0; 
+    cursor: pointer;
+}
+
+header .icon i:hover{
+    color: #0c8766;
+}
+
+html{
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+.pricing .heading1{
+    text-align: center;
+    margin: 5rem 0 2rem;
+}
+
+.pricing .heading1 h1{
+    display: inline-block;
+}
+
+.textBox{
+    width: 200px;
+    display: inline;
+    height: 100px;
+    margin-top: .7rem;
+    margin-left: .7rem;
+    position: absolute;
+}
+
+/* toggling the yearly and monthly text  starts*/
+.pricing .heading1 .m{
+    display: inline;
+    margin:  0 1rem;
+}
+
+.pricing .heading1 .m.innactive{
+    display: none;
+}
+
+.pricing .heading1 .y{
+    display: none;
+    margin:  0 1rem;
+}
+
+.pricing .heading1 .y.active{
+    display: inline;
+}
+
+/* toggling the yearly and monthly text ends*/
+
+.pricing .heading1 .toggler{
+    background-color: rgb(166, 166, 166);
+    border-radius: 50px;
+    width: 3rem; 
+    margin:0 1rem ; 
+    display: inline-block;  
+    align-items: center;
+    height: 1.7rem;
+    cursor: pointer;
+}
+
+.pricing .heading1 .toggler.activeToggler{
+    background-color: var(--green);
+    transition: .2s linear;
+}
+
+.pricing .heading1 .toggler .ball{
+    background: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: 1.2px; 
+    left: 3px;
+    border-radius: 50%;
+    transition: .2s linear;
+}
+
+.pricing .heading1 .toggler .ball.active{
+    left: 22px;
+    transition: .2s linear;
+}
+
+.pricing .yearly-row{
+    display: none; 
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+}
+
+.pricing .yearly-row.activeYear{
+    display: flex; 
+}
+.pricing .mothly-row.innactive{
+    display: none;
+}
+.pricing .mothly-row{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+}
+
+.pricing .mothly-row .col{
+.pricing .mothly-row .col, .pricing .yearly-row .col{
+    border-radius: .4rem;
+    padding: 5rem 2.3rem;
+    flex: 1 1 10rem;
+    height: 50rem;
+    border: 1px solid rgb(195, 195, 195); 
+    /* box-shadow: 0 0rem .4rem  #333; */
+}
+
+.pricing .mothly-row .col ul li, .pricing .yearly-row .col ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: .8rem 0;
+}
+
+.pricing .mothly-row .col ul, .pricing .yearly-row .col ul {
+    padding: 0;
+    padding-top: 1rem;
+}
+
+.pricing .mothly-row .col  i, .pricing .yearly-row .col ul i{
+    color: var(--green); font-size: .8rem;
+}
+.pricing .monthly-row .col h3{
+    border-bottom: .14rem solid var(--green);
+    background: var(--green);
+    padding: .8rem 0;
+}
+
+.pricing .mothly-row .col .button, .pricing .yearly-row .col .button{
+    background: var(--green);
+    color : #fff;
+    padding: 1rem;
+    border-radius: .3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.options .box img {
+    width: 1.3rem;
+    /* font-weight: 500; */
+    color: red; 
+    transform: rotate(-90deg); 
+}
+
+.options .box a {
+    text-decoration: none;
+    color: var(--green); 
+}
+
+.options .box a:hover img {
+    transform: rotate(-90deg); 
+    transform: translateX(8px);
+    transition: .4s linear;
+}
+
+.options h2{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.options .box {
+    padding: 2rem 3rem; 
+    margin: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: .4rem;
+    box-shadow: 0  0 2rem rgba(237, 237, 237, 0.9);
+}
+.extra {
+    padding: 3.7rem;
+    margin-top: 2rem;
+    background: rgba(202, 232, 255, .3);
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.extra h3 span {
+    color: var(--green); 
+}
+
+.extra h3  {
+    line-height: 3rem;
+}
+
+.extra h4{
+    margin: 0; padding: 0;
+}
+
+.extra .btn{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .78rem;
+    letter-spacing: .1rem; 
+    height: 3rem;
+    color: #fff; 
+    background: var(--green);
+}
+
+.extra .btn:hover{
+    background: rgb(2, 98, 2); 
+}
+
+.faq {
+    max-width: 900px;
+}
+
+.faq  h3{
+    margin-bottom: 2rem;
+    color: var(--green);
+}
+
+.faq .question h1{
+    display: flex;
+    font-size: 1.5rem;
+    padding: .31rem 0;
+    min-width: 6rem;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.faq .question:hover h1{
+    color: var(--green);
+}
+
+.faq .question p{
+    display: none;
+    position: relative;
+    margin: 0;
+    top: 0;
+    padding: .6rem;
+    background: rgb(243, 243, 243);
+}
+
+.faq .question i{
+    transform: rotate(90deg); 
+
+}
+
+.faq .question img{
+    width: 2rem;
+    /* font-weight: 500; */
+    color: red; 
+    font-size: 20rem;
+}
+
+.faq .question p.active{
+    display: inline-block;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* flex-direction:column; */
+    background: rgb(241, 241, 241);
+    padding: 3rem 2rem;
+    max-width: 120rem; 
+}
+
+.footer .box{
+    /* flex: 1 1 20rem; */
+    margin: 0 1rem;
+}
+
+.footer .box .inner-box a{
+    display: block;
+}
+
+.footer .box h1{
+    margin: 0; padding: 0;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer .box .templates h1{
+    color:rgb(2, 98, 2);
+    margin-top: 2rem; 
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer .box .inner-box a{
+    text-decoration: none;
+    line-height: 1.7rem;
+    letter-spacing: .01rem;
+}
+
+
+
+@media (max-width: 800px){
+    header .navbar .nav, header .navbar .buttons{
+        display: none;
+    }
+
+    header .icon i{
+        display: inline-block;
+    }
+}

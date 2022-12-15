@@ -1,0 +1,24 @@
+
+$primary: black;
+$danger: yellow;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+$display-font-sizes: (
+  1: 2rem,
+  2: 2.5rem,
+  3: 2rem,
+  4: 2.5rem,
+  5: 2rem,
+  6: 2.5rem
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.main-form{
+    width: 100px;
+}
+
+
